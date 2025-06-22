@@ -1,0 +1,35 @@
+{
+  "name": "task_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "env-cmd nodemon app.js",
+    "test": "env-cmd -f ./config/test.env jest --watchAll --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.1",
+    "resend": "^4.6.0",
+    "sharp": "^0.34.2",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^30.0.2",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
+  },
+  "description": ""
+}
