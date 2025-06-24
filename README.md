@@ -1,61 +1,68 @@
-# ✅ Task Management API
+# Task Management API ✅
 
-A secure and feature-rich **Task Management API** built with **Node.js**, **Express**, and **MongoDB**.  
-This API supports user authentication, task CRUD operations, file upload, and email functionality — making it suitable for real-world task tracking apps.
+A secure and feature-rich **Task Management API** built with **Node.js**, **Express**, and **MongoDB**, designed for real-world task tracking applications.
 
----
+## Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack--packages)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Configuration](#-configuration)
+- [Email Functionality](#-email-with-resend)
+- [Testing](#-testing)
+- [Contributing](#-contributing)
 
 ## 🚀 Features
 
-- 🔐 User authentication with JWT (register/login/logout)
-- 📋 Task CRUD operations (Create, Read, Update, Delete)
-- 📁 File uploads (avatar/image) using `multer` & `sharp`
-- 📧 Email sending via Resend
-- 🔍 Input validation using `validator`
-- 🔒 Password hashing with `bcrypt`
-- 🧪 Unit & Integration testing using Jest & Supertest
+### Core Functionality
+- 🔐 JWT-based user authentication (register/login/logout)
+- 📋 Full CRUD operations for tasks
+- 📁 File uploads (avatars/task images) with `multer` & `sharp`
 
----
+### Additional Features
+- 📧 Email notifications via Resend
+- 🔍 Robust input validation with `validator`
+- 🔒 Secure password hashing using `bcrypt`
+- 🧪 Comprehensive test suite with Jest & Supertest
 
-## 📦 Tech Stack & NPM Packages Used
+## 📦 Tech Stack & Packages
 
-### 👉 Core:
-- [`express`](https://www.npmjs.com/package/express) – API framework
-- [`mongoose`](https://www.npmjs.com/package/mongoose) – MongoDB ODM
-- [`mongodb`](https://www.npmjs.com/package/mongodb) – MongoDB driver
-- [`dotenv`](https://www.npmjs.com/package/dotenv) – Load env variables
-- [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken) – Auth
-- [`bcrypt`](https://www.npmjs.com/package/bcrypt) – Password hashing
-- [`validator`](https://www.npmjs.com/package/validator) – Input validation
-- [`multer`](https://www.npmjs.com/package/multer) – File upload
-- [`sharp`](https://www.npmjs.com/package/sharp) – Image processing
-- [`resend`](https://www.npmjs.com/package/resend) – Email sending
-- [`env-cmd`](https://www.npmjs.com/package/env-cmd) – Manage multiple env files
+### Core Dependencies
+| Package | Purpose |
+|---------|---------|
+| `express` | API framework |
+| `mongoose` | MongoDB ODM |
+| `jsonwebtoken` | Authentication |
+| `bcrypt` | Password hashing |
+| `validator` | Input validation |
+| `multer` + `sharp` | File upload & processing |
+| `resend` | Email functionality |
 
-### 🧪 Dev Dependencies:
-- [`nodemon`](https://www.npmjs.com/package/nodemon) – Auto-reload in dev
-- [`jest`](https://www.npmjs.com/package/jest) – Testing framework
-- [`supertest`](https://www.npmjs.com/package/supertest) – HTTP test requests
-
----
+### Development Tools
+| Package | Purpose |
+|---------|---------|
+| `nodemon` | Development server |
+| `jest` + `supertest` | Testing framework |
+| `env-cmd` | Environment management |
 
 ## 🛠️ Getting Started
 
-### ✅ Prerequisites
+### Prerequisites
+- Node.js (v14+ recommended)
+- npm or yarn
+- MongoDB (Atlas or local instance)
 
-- Node.js and npm installed
-- MongoDB Atlas or local MongoDB running
-
----
-
-## 🚚 Installation
-
+### Installation
 ```bash
+# Clone repository
 git clone https://github.com/your-username/task-manager-api.git
+
+# Navigate to project directory
 cd task-manager-api
+
+# Install dependencies
 npm install
-```
----
 
 ## 🔐 Environment Variables
 ```bash
