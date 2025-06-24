@@ -1,4 +1,4 @@
-# Task Management API ✅
+# Task Management API 
 
 A secure and feature-rich **Task Management API** built with **Node.js**, **Express**, and **MongoDB**, designed for real-world task tracking applications.
 
