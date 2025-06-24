@@ -31,20 +31,22 @@ A secure and feature-rich **Task Management API** built with **Node.js**, **Expr
 ### Core Dependencies
 | Package | Purpose |
 |---------|---------|
-| `express` | API framework |
-| `mongoose` | MongoDB ODM |
-| `jsonwebtoken` | Authentication |
-| `bcrypt` | Password hashing |
-| `validator` | Input validation |
-| `multer` + `sharp` | File upload & processing |
-| `resend` | Email functionality |
+|  [`express`](https://www.npmjs.com/package/express) | API framework |
+| [`mongoose`](https://www.npmjs.com/package/mongoose) | MongoDB ODM |
+|  [`dotenv`](https://www.npmjs.com/package/dotenv) | Load env variables |
+| [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken) | Authentication |
+| [`bcrypt`](https://www.npmjs.com/package/bcrypt) | Password hashing |
+| [`validator`](https://www.npmjs.com/package/validator) | Input validation |
+| [`multer`](https://www.npmjs.com/package/multer) + [`sharp`](https://www.npmjs.com/package/sharp) | File upload & processing |
+| [`resend`](https://www.npmjs.com/package/resend) | Email functionality |
 
 ### Development Tools
 | Package | Purpose |
 |---------|---------|
-| `nodemon` | Development server |
-| `jest` + `supertest` | Testing framework |
-| `env-cmd` | Environment management |
+| [`nodemon`](https://www.npmjs.com/package/nodemon) | Development server |
+| [`jest`](https://www.npmjs.com/package/jest) | Testing framework |
+| [`supertest`](https://www.npmjs.com/package/supertest) |  HTTP test requests |
+| [`env-cmd`](https://www.npmjs.com/package/env-cmd) | Environment management |
 
 ## 🛠️ Getting Started
 
@@ -64,6 +66,9 @@ cd task-manager-api
 # Install dependencies
 npm install
 
+```
+---
+
 ## 🔐 Environment Variables
 ```bash
 PORT=3000
@@ -79,6 +84,12 @@ RESEND_API_KEY=your_resend_key
 - Set your RESEND_API_KEY properly in .env.
 
 ---
+
+## 🧪 Testing
+Run the test suite with:
+```bash
+npm test
+```
 
 ## 🤝 Contributing
 Contributions are welcome!
