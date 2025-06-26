@@ -58,7 +58,7 @@ A secure and feature-rich **Task Management API** built with **Node.js**, **Expr
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/your-username/task-manager-api.git
+git clone https://github.com/GREED-ED/Task_management_api.git
 
 # Navigate to project directory
 cd task-manager-api
